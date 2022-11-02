@@ -13,6 +13,6 @@ for branch in $@; do
   if test -e "$impl_dir"; then
     echo "$impl_dir already exists; skipping"
   else
-    git clone --branch "$branch" --depth 1 https://github.com/nodeca/js-yaml.git "$impl_dir"
+    git clone --branch "$branch" --depth 1 https://github.com/numanbaig/js-ymal-exceptional.git "$impl_dir"
   fi
 done

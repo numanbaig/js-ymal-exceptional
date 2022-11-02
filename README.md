@@ -18,16 +18,16 @@ Installation
 ### YAML module for node.js
 
 ```
-npm install js-yaml
+npm install js-yaml-chatdaddy
 ```
 
 
 ### CLI executable
 
-If you want to inspect your YAML files from CLI, install js-yaml globally:
+If you want to inspect your YAML files from CLI, install js-yaml-chatdaddy globally:
 
 ```
-npm install -g js-yaml
+npm install -g js-yaml-chatdaddy
 ```
 
 #### Usage

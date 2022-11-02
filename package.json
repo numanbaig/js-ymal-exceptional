@@ -1,5 +1,5 @@
 {
-  "name": "js-yaml",
+  "name": "js-yaml-chatdaddy",
   "version": "4.1.0",
   "description": "YAML 1.2 parser and serializer",
   "keywords": [
@@ -23,7 +23,7 @@
     "dist/"
   ],
   "bin": {
-    "js-yaml": "bin/js-yaml.js"
+    "js-yaml-chatdaddy": "bin/js-yaml.js"
   },
   "module": "./dist/js-yaml.mjs",
   "exports": {
