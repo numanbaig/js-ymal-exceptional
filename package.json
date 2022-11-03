@@ -15,7 +15,7 @@
     "Martin Grenfell <martin.grenfell@gmail.com> (http://got-ravings.blogspot.com)"
   ],
   "license": "MIT",
-  "repository": "nodeca/js-yaml",
+  "repository": "numanbaig/js-ymal-exceptional",
   "files": [
     "index.js",
     "lib/",
