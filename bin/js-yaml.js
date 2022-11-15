@@ -15,7 +15,7 @@ var yaml     = require('..');
 
 
 var cli = new argparse.ArgumentParser({
-  prog:     'js-yaml',
+  prog:     'js-yaml-chatdaddy',
   add_help:  true
 });
 

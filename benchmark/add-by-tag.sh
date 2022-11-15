@@ -8,7 +8,7 @@ fi
 root_dir="$(dirname $0)"
 
 for branch in $@; do
-  impl_dir="$root_dir/implementations/js-yaml-$branch"
+  impl_dir="$root_dir/implementations/js-yaml-chatdaddy-$branch"
 
   if test -e "$impl_dir"; then
     echo "$impl_dir already exists; skipping"
