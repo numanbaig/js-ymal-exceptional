@@ -1,6 +1,6 @@
 {
   "name": "js-yaml-chatdaddy",
-  "version": "4.1.1",
+  "version": "4.1.3",
   "description": "YAML 1.2 parser and serializer",
   "keywords": [
     "yaml",
