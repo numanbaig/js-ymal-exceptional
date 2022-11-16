@@ -2957,6 +2957,7 @@
 
     this.implicitTypes = this.schema.compiledImplicit;
     this.explicitTypes = this.schema.compiledExplicit;
+    this.singleFolded = options['singleFolded'] || false;
 
     this.tag = null;
     this.result = '';
@@ -3263,7 +3264,10 @@
           return '>' + blockHeader(string, state.indent)
             + dropEndingNewline(indentString(foldString(string, lineWidth), indent));
         case STYLE_DOUBLE:
-          return '"' + escapeString(string) + '"';
+          return state.singleFolded ? '>' + blockHeader(string, state.indent)
+            + dropEndingNewline(indentString(foldString(string, lineWidth), indent))
+            :  '"' + escapeString(string) + '"';
+        
         default:
           throw new exception('impossible error: invalid scalar style');
       }

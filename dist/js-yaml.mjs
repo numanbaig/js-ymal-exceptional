@@ -2957,6 +2957,7 @@ function State(options) {
 
   this.duplicates = [];
   this.usedDuplicates = null;
+  this.singleFolded = options['singleFolded'] || false;
 }
 
 // Indents every line in a string. Empty lines (\n only) are not indented.
@@ -3257,7 +3258,8 @@ function writeScalar(state, string, level, iskey, inblock) {
         return '>' + blockHeader(string, state.indent)
           + dropEndingNewline(indentString(foldString(string, lineWidth), indent));
       case STYLE_DOUBLE:
-        return '"' + escapeString(string) + '"';
+        return state.singleFolded ? '>' + blockHeader(string, state.indent)
+        + dropEndingNewline(indentString(foldString(string, lineWidth), indent)) : '"' + escapeString(string) + '"';
       default:
         throw new exception('impossible error: invalid scalar style');
     }
